@@ -19,7 +19,7 @@ resources:
       tasks:
         - task_key: notebook_task
           run_as:
-            service_principal_name: '508e7ccb-86a5-4e83-8306-5c0447ac7c20'
+            service_principal_name: '6f5262dd-95da-41ef-8e62-ccd46dc09d74'
           # job_cluster_key: job_cluster
           notebook_task:
             notebook_path: ../src/notebook.ipynb
