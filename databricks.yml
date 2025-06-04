@@ -1,6 +1,9 @@
 bundle:
   name: bundlesDevOpsDemo
 
+run_as:
+  service_principal_name: '5cf3z04b-a73c-4x46-9f3d-52da7999069e'
+
 include:
   - resources/*.yml
 targets:
