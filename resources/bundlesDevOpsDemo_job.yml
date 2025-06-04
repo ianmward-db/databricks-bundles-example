@@ -3,7 +3,8 @@ resources:
   jobs:
     bundlesDevOpsDemo_job:
       name: bundlesDevOpsDemo_job
-
+      budget_policy_id: 73d2d100-fc09-436c-989a-5f55566ae458
+      performance_target: STANDARD
 
       schedule:
         # Run every day at 8:37 AM
@@ -25,24 +26,3 @@ resources:
           pipeline_task:
             pipeline_id: ${resources.pipelines.bundlesDevOpsDemo_pipeline.id}
         
-        - task_key: main_task
-          depends_on:
-            - task_key: refresh_pipeline
-          job_cluster_key: job_cluster
-          python_wheel_task:
-            package_name: bundlesDevOpsDemo
-            entry_point: main
-          libraries:
-            # By default we just include the .whl file generated for the bundlesDevOpsDemo package.
-            # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
-            # for more information on how to add other libraries.
-            - whl: ../dist/*.whl
-          existing_cluster_id: 0614-140310-8igaasv5
-      job_clusters:
-        - job_cluster_key: job_cluster
-          new_cluster:
-            spark_version: 13.3.x-scala2.12
-            node_type_id: Standard_D3_v2
-            autoscale:
-                min_workers: 1
-                max_workers: 4
