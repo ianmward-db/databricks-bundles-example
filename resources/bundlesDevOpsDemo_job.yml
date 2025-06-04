@@ -4,7 +4,7 @@ resources:
   jobs:
     bundlesDevOpsDemo_job:
       name: bundlesDevOpsDemo_job
-      budget_policy_id: '618adcd7-79ee-4c50-8ac8-827ea0b967cf'
+      budget_policy_id: bf5ce703-4c36-4fae-bfd0-9ce78af60730
       performance_target: STANDARD
 
       schedule:
