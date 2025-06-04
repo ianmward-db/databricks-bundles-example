@@ -5,6 +5,8 @@ resources:
       name: bundlesDevOpsDemo_job
       budget_policy_id: 73d2d100-fc09-436c-989a-5f55566ae458
       performance_target: STANDARD
+      run_as:
+        - service_principal_name: ian_ward_azure_devops_user
 
       schedule:
         # Run every day at 8:37 AM
