@@ -4,6 +4,8 @@ bundle:
 run_as:
   service_principal_name: '6f5262dd-95da-41ef-8e62-ccd46dc09d74'
 
+budget_policy_id: 618adcd7-79ee-4c50-8ac8-827ea0b967cf
+
 include:
   - resources/*.yml
 targets:
