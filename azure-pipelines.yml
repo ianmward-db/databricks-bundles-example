@@ -151,7 +151,6 @@ stages:
     
     - script: |
         echo Configurando o CLI do Databricks...
-        databricks configure --token
         echo -e "[DATABRICKS_HOST]\n[DATABRICKS_TOKEN]" | databricks configure --token
       env:
         DATABRICKS_HOST: $(DATABRICKS_HOST)
