@@ -1,12 +1,13 @@
 # The main job for bundlesDevOpsDemo.
+run_as:
+  service_principal_name: ian_ward_azure_devops_user
+
 resources:
   jobs:
     bundlesDevOpsDemo_job:
       name: bundlesDevOpsDemo_job
       budget_policy_id: 618adcd7-79ee-4c50-8ac8-827ea0b967cf
       performance_target: STANDARD
-      run_as:
-        - service_principal_name: ian_ward_azure_devops_user
 
       schedule:
         # Run every day at 8:37 AM
@@ -15,7 +16,7 @@ resources:
 
       email_notifications:
         on_failure:
-          - alfeu.duran@databricks.com
+          - ian.ward@databricks.com
 
       tasks:
         - task_key: notebook_task
