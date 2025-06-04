@@ -1,6 +1,6 @@
 # The main job for bundlesDevOpsDemo.
 run_as:
-  service_principal_name: ian_ward_azure_devops_user
+  service_principal_name: 508e7ccb-86a5-4e83-8306-5c0447ac7c20
 
 resources:
   jobs:
@@ -20,6 +20,8 @@ resources:
 
       tasks:
         - task_key: notebook_task
+          run_as:
+            service_principal_name: 508e7ccb-86a5-4e83-8306-5c0447ac7c20
           # job_cluster_key: job_cluster
           notebook_task:
             notebook_path: ../src/notebook.ipynb
