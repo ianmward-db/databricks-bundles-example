@@ -3,7 +3,7 @@ resources:
   jobs:
     bundlesDevOpsDemo_job:
       name: bundlesDevOpsDemo_job
-      budget_policy_id: 73d2d100-fc09-436c-989a-5f55566ae458
+      budget_policy_id: 618adcd7-79ee-4c50-8ac8-827ea0b967cf
       performance_target: STANDARD
       run_as:
         - service_principal_name: ian_ward_azure_devops_user
