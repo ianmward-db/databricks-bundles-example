@@ -18,6 +18,7 @@ resources:
 
       tasks:
         - task_key: notebook_task
+          budget_policy_id: 618adcd7-79ee-4c50-8ac8-827ea0b967cf
           # job_cluster_key: job_cluster
           notebook_task:
             notebook_path: ../src/notebook.ipynb
