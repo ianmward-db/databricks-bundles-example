@@ -1,7 +1,11 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: bundlesDevOpsDemo
-Version: 0.0.1+20240516.200743
+Version: 0.0.1+20250812.74539
 Summary: wheel file based on bundlesDevOpsDemo/src
 Home-page: https://databricks.com
 Author: alfeu.duran@databricks.com
 Requires-Dist: setuptools
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary

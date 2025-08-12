@@ -1,20 +1,17 @@
 bundle:
   name: bundlesDevOpsDemo
 
-run_as:
-  service_principal_name: '6f5262dd-95da-41ef-8e62-ccd46dc09d74'
-
 include:
   - resources/*.yml
 targets:
   dev:
     default: true
     workspace:
-      host: https://adb-1946161170922312.12.azuredatabricks.net/
+      host: https://adb-2303037315764064.4.azuredatabricks.net/
       root_path: /Workspace/Users/ian.ward@databricks.com/Projects/${bundle.name}/${bundle.target}
   prod:
     mode: production
     workspace:
-      host: https://adb-1946161170922312.12.azuredatabricks.net/
-      root_path: /Workspace/Users/ian.ward@databricks.com/Projects/${bundle.name}/${bundle.target}
+      host: https://adb-2405420463461200.0.azuredatabricks.net/
+      root_path: /Workspace/Users/ian.ward@databricks.com/ProdProjects/${bundle.name}/${bundle.target}
     
