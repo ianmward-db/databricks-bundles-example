@@ -9,9 +9,12 @@ targets:
     workspace:
       host: https://adb-2303037315764064.4.azuredatabricks.net/
       root_path: /Workspace/Users/ian.ward@databricks.com/Projects/${bundle.name}/${bundle.target}
+    run_as:
+      user_name: ian.ward@databricks.com
   prod:
     mode: production
     workspace:
       host: https://adb-2405420463461200.0.azuredatabricks.net/
       root_path: /Workspace/Users/ian.ward@databricks.com/ProdProjects/${bundle.name}/${bundle.target}
-    
+    run_as:
+      user_name: ian.ward@databricks.com
